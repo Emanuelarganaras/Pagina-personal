@@ -8,6 +8,7 @@
     <style>
         body {
             background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
         }
         .hero {
             background-color: #343a40;
@@ -15,24 +16,67 @@
             padding: 50px 0;
             text-align: center;
         }
-        .projects {
+        .projects, .about, .skills, .contact {
             padding: 50px 0;
         }
     </style>
 </head>
 <body>
     <header class="hero">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portafolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <h1>Emanuel Argañaras</h1>
         <p>Desarrollador Web en formación</p>
     </header>
     
-    <section class="container projects">
+    <section id="about" class="container about">
+        <h2 class="text-center">Sobre mí</h2>
+        <p class="text-center">Soy un desarrollador web en formación, apasionado por la tecnología y el aprendizaje continuo.</p>
+    </section>
+
+    <section id="projects" class="container projects">
         <h2 class="text-center">Mis Proyectos</h2>
         <p class="text-center">Aquí irán los proyectos que desarrolles.</p>
+    </section>
+
+    <section id="skills" class="container skills">
+        <h2 class="text-center">Habilidades</h2>
+        <p class="text-center">HTML, CSS, JavaScript, Bootstrap</p>
+    </section>
+    
+    <section id="contact" class="container contact">
+        <h2 class="text-center">Contacto</h2>
+        <p class="text-center">Correo: emmanuel@example.com</p>
     </section>
     
     <footer class="text-center p-3 bg-dark text-white">
         <p>&copy; 2025 - Emanuel Argañaras</p>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
+
 </html>
